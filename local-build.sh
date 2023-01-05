@@ -1,1 +1,1 @@
-docker buildx build -t "serpbear:latest" --platform linux/amd64,linux/arm64 .
+docker buildx build -t "serpbear:latest" --platform linux/amd64,linux/arm64,linux/arm/v7 .
