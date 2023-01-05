@@ -1,0 +1,21 @@
+{
+  "name": "serpbear-multiarch-docker",
+  "version": "0.2.2-rc2",
+  "description": "Universal Docker images for Serpbear Open Source Search Engine Position Tracking App",
+  "main": "index.js",
+  "scripts": {
+    "test": "docker buildx build -t \"serpbear:latest\" --platform linux/amd64,linux/arm64,linux/arm/v7 --target builder .",
+    "local-build": "docker buildx build -t \"serpbear:latest\" --platform linux/amd64,linux/arm64,linux/arm/v7 .",
+    "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn version && git push --follow-tags; else echo \"Uncomitted changes found.\" && exit 1; fi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianoamalfi/serpbear-multiarch-docker.git"
+  },
+  "author": "Adriano Amalfi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adrianoamalfi/serpbear-multiarch-docker/issues"
+  },
+  "homepage": "https://github.com/adrianoamalfi/serpbear-multiarch-docker#readme"
+}
