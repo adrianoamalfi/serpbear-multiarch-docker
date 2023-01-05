@@ -59,8 +59,6 @@ volumes:
 
 SerpBear is an Open Source Search Engine Position Tracking App. It allows you to track your website's keyword positions in Google and get notified of their positions.
 
-![Easy to Use Search Engine Rank Tracker](https://erevanto.sirv.com/Images/serpbear/serpbear_readme_v2.gif)
-
 #### Features
 -   **Unlimited Keywords:** Add unlimited domains and unlimited keywords to track their SERP.
 -   **Email Notification:** Get notified of your keyword position changes daily/weekly/monthly through email.
