@@ -7,7 +7,8 @@ This project create Universal Docker images for [Serpbear](https://github.com/to
 | Platform        | Description                                                           |
 |-------------------|-----------------------------------------------------------------------|
 | linux/amd64        | Standard AMD64 Processors. |
-| linux/amd64  | ARM64-based M1 chips, Ampere server or MacBook Air, MacBook Pro, and Mac mini models.     |
+| linux/arm64  | ARM64-based M1 chips or MacBook Air, MacBook Pro, and Mac mini models.     |
+| linux/arm64/v8    | ARM64v8 processors like Oracle Ampere VPS. |
 | linux/arm/v7    | ARMv7 processors, like Raspberry 2, Pandaboard, BeagleBoard, BeagleBone (Black). |
 
 
