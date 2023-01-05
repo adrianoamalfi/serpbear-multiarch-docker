@@ -54,7 +54,7 @@ volumes:
 
 
 
-# SerpBear
+# SerpBear [Github Project Page](https://github.com/towfiqi/serpbear)
 #### [Documentation](https://docs.serpbear.com/) | [Changelog](https://github.com/towfiqi/serpbear/blob/main/CHANGELOG.md) | [Official Docker Image (only OS/ARCH linux/amd64)](https://hub.docker.com/r/towfiqi/serpbear)
 
 SerpBear is an Open Source Search Engine Position Tracking App. It allows you to track your website's keyword positions in Google and get notified of their positions.
