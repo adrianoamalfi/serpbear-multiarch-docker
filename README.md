@@ -1,5 +1,7 @@
 # serpbear-multiarch-docker
 
+![GitHub](https://img.shields.io/github/license/adrianoamalfi/serpbear-multiarch-docker) ![Docker Image Version (latest semver)](https://img.shields.io/docker/v/adrianoamalfi/serpbear-multiarch-docker) ![Docker Pulls](https://img.shields.io/docker/pulls/adrianoamalfi/serpbear-multiarch-docker)
+
 This project create Universal Docker images for [Serpbear](https://github.com/towfiqi/serpbear/) Open Source Search Engine Position Tracking App
 
 | Platform        | Description                                                           |
@@ -50,10 +52,6 @@ volumes:
 
 
 
-
-
-
-![GitHub](https://img.shields.io/github/license/adrianoamalfi/serpbear-multiarch-docker) ![Docker Image Version (latest semver)](https://img.shields.io/docker/v/adrianoamalfi/serpbear-multiarch-docker) ![Docker Pulls](https://img.shields.io/docker/pulls/adrianoamalfi/serpbear-multiarch-docker)
 
 
 # SerpBear
