@@ -8,6 +8,9 @@ WORKDIR /src
 
 ADD https://github.com/towfiqi/serpbear/archive/refs/tags/v${SERPBEAR_VERSION}.tar.gz ./
 RUN tar -zvxf v${SERPBEAR_VERSION}.tar.gz && mv serpbear-${SERPBEAR_VERSION} serpbear
+
+RUN apk add --update python3 py3-pip 
+
 RUN cd serpbear/ && npm install
 
 FROM node:lts-alpine AS builder
