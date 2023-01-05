@@ -4,7 +4,7 @@
   "description": "Universal Docker images for Serpbear Open Source Search Engine Position Tracking App",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "docker buildx build -t \"serpbear:latest\" --platform linux/amd64,linux/arm64,linux/arm/v7 --target builder .",
     "local-build": "docker buildx build -t \"serpbear:latest\" --platform linux/amd64,linux/arm64,linux/arm/v7 .",
     "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn version && git push --follow-tags; else echo \"Uncomitted changes found.\" && exit 1; fi"
   },
