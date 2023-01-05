@@ -1,4 +1,4 @@
-FROM node:lts-alpine AS deps
+FROM --platform=${BUILDPLATFORM} node:lts-alpine AS deps
 
 LABEL maintainer="adrianoamalfi"
 
