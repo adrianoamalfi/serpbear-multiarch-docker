@@ -1,6 +1,6 @@
 {
   "name": "serpbear-multiarch-docker",
-  "version": "0.2.2",
+  "version": "0.2.4",
   "description": "Universal Docker images for Serpbear Open Source Search Engine Position Tracking App",
   "main": "index.js",
   "scripts": {
