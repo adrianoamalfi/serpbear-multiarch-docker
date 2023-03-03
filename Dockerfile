@@ -6,7 +6,7 @@ LABEL org.opencontainers.image.description "Universal Docker images for Serpbear
 LABEL org.opencontainers.image.url "https://github.com/adrianoamalfi/serpbear-multiarch-docker"
 LABEL org.opencontainers.image.documentation "https://raw.githubusercontent.com/adrianoamalfi/serpbear-multiarch-docker/main/README.md"
 LABEL org.opencontainers.image.source "https://raw.githubusercontent.com/adrianoamalfi/serpbear-multiarch-docker/main/Dockerfile"
-LABEL org.opencontainers.image.version "v0.2.2"
+LABEL org.opencontainers.image.version "v0.2.4"
 LABEL org.opencontainers.image.base.name "node:lts-alpine"
 LABEL org.opencontainers.image.licenses "MIT"
 
@@ -43,7 +43,7 @@ COPY --from=builder --chown=nextjs:nodejs /app/cron.js ./
 COPY --from=builder --chown=nextjs:nodejs /app/email ./email
 RUN rm package.json
 RUN npm init -y 
-RUN npm i cryptr dotenv node-cron @googleapis/searchconsole
+RUN npm i cryptr dotenv croner @googleapis/searchconsole
 RUN npm i -g concurrently
 
 USER nextjs
