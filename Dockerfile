@@ -10,7 +10,7 @@ LABEL org.opencontainers.image.version "v0.2.4"
 LABEL org.opencontainers.image.base.name "node:lts-alpine"
 LABEL org.opencontainers.image.licenses "MIT"
 
-ARG SERPBEAR_VERSION=0.2.2
+ARG SERPBEAR_VERSION=0.2.6
 
 WORKDIR /src
 
