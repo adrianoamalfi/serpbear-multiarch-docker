@@ -6,11 +6,11 @@ LABEL org.opencontainers.image.description "Universal Docker images for Serpbear
 LABEL org.opencontainers.image.url "https://github.com/adrianoamalfi/serpbear-multiarch-docker"
 LABEL org.opencontainers.image.documentation "https://raw.githubusercontent.com/adrianoamalfi/serpbear-multiarch-docker/main/README.md"
 LABEL org.opencontainers.image.source "https://raw.githubusercontent.com/adrianoamalfi/serpbear-multiarch-docker/main/Dockerfile"
-LABEL org.opencontainers.image.version "v0.2.4"
+LABEL org.opencontainers.image.version "v0.3.3"
 LABEL org.opencontainers.image.base.name "node:lts-alpine"
 LABEL org.opencontainers.image.licenses "MIT"
 
-ARG SERPBEAR_VERSION=0.2.6
+ARG SERPBEAR_VERSION=0.3.3
 
 WORKDIR /src
 
