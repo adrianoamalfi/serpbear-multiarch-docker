@@ -1,0 +1,45 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+dist/
+build/
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Docker
+*.dockerignore
+.docker/
+docker-compose.override.yml
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Linting cache
+.eslintcache
+
+# Temporary files
+*.tmp
+*.temp
+
+# GitHub Actions
+.github/workflows/*.bak
+.github/workflows/*.tmp

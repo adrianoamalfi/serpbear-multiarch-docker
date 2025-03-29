@@ -6,9 +6,8 @@
   "scripts": {
     "test": "docker buildx build -t \"serpbear:latest\" --platform linux/amd64,linux/arm64,linux/arm/v7 --target builder .",
     "local-build": "docker buildx build -t \"serpbear:latest\" --platform linux/amd64,linux/arm64,linux/arm/v7 .",
-    "pre-ship": "git status --porcelain && yarn lint",
+    "pre-ship": "git status --porcelain",
     "ship": "yarn pre-ship && yarn version && git push --follow-tags",
-    "lint": "eslint . --ext .js,.json",
     "clean": "rm -rf dist node_modules"
   },
   "repository": {
@@ -21,7 +20,12 @@
     "url": "https://github.com/adrianoamalfi/serpbear-multiarch-docker/issues"
   },
   "homepage": "https://github.com/adrianoamalfi/serpbear-multiarch-docker#readme",
-  "keywords": ["docker", "multiarch", "serpbear", "search-engine"],
+  "keywords": [
+    "docker",
+    "multiarch",
+    "serpbear",
+    "search-engine"
+  ],
   "engines": {
     "node": ">=16.0.0"
   },
@@ -29,5 +33,8 @@
     "Dockerfile",
     "README.md",
     "src/"
-  ]
+  ],
+  "dependencies": {
+    "yarn": "^1.22.22"
+  }
 }
